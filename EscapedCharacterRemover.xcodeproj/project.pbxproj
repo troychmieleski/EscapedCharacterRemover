@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0593FAF1192E75000016638A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0593FAF0192E75000016638A /* Cocoa.framework */; };
+		0593FAFB192E75000016638A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0593FAF9192E75000016638A /* InfoPlist.strings */; };
+		0593FAFD192E75000016638A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FAFC192E75000016638A /* main.m */; };
+		0593FB01192E75000016638A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0593FAFF192E75000016638A /* Credits.rtf */; };
+		0593FB04192E75000016638A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB03192E75000016638A /* AppDelegate.m */; };
+		0593FB07192E75010016638A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0593FB05192E75010016638A /* MainMenu.xib */; };
+		0593FB09192E75010016638A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0593FB08192E75010016638A /* Images.xcassets */; };
+		0593FB10192E75010016638A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0593FB0F192E75010016638A /* XCTest.framework */; };
+		0593FB11192E75010016638A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0593FAF0192E75000016638A /* Cocoa.framework */; };
+		0593FB19192E75010016638A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0593FB17192E75010016638A /* InfoPlist.strings */; };
+		0593FB1B192E75010016638A /* EscapedCharacterRemoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB1A192E75010016638A /* EscapedCharacterRemoverTests.m */; };
+		0593FB2E192E788A0016638A /* EscapedCharacterRemoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0593FB12192E75010016638A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0593FAE5192E75000016638A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0593FAEC192E75000016638A;
+			remoteInfo = EscapedCharacterRemover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0593FAED192E75000016638A /* EscapedCharacterRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscapedCharacterRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0593FAF0192E75000016638A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0593FAF3192E75000016638A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0593FAF4192E75000016638A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0593FAF5192E75000016638A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0593FAF8192E75000016638A /* EscapedCharacterRemover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EscapedCharacterRemover-Info.plist"; sourceTree = "<group>"; };
+		0593FAFA192E75000016638A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0593FAFC192E75000016638A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0593FAFE192E75000016638A /* EscapedCharacterRemover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EscapedCharacterRemover-Prefix.pch"; sourceTree = "<group>"; };
+		0593FB00192E75000016638A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0593FB02192E75000016638A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0593FB03192E75000016638A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0593FB06192E75010016638A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0593FB08192E75010016638A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0593FB0E192E75010016638A /* EscapedCharacterRemoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscapedCharacterRemoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0593FB0F192E75010016638A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0593FB16192E75010016638A /* EscapedCharacterRemoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EscapedCharacterRemoverTests-Info.plist"; sourceTree = "<group>"; };
+		0593FB18192E75010016638A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0593FB1A192E75010016638A /* EscapedCharacterRemoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EscapedCharacterRemoverTests.m; sourceTree = "<group>"; };
+		0593FB2C192E788A0016638A /* EscapedCharacterRemoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EscapedCharacterRemoverViewController.h; sourceTree = "<group>"; };
+		0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EscapedCharacterRemoverViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0593FAEA192E75000016638A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FAF1192E75000016638A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0593FB0B192E75010016638A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FB11192E75010016638A /* Cocoa.framework in Frameworks */,
+				0593FB10192E75010016638A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0593FAE4192E75000016638A = {
+			isa = PBXGroup;
+			children = (
+				0593FAF6192E75000016638A /* EscapedCharacterRemover */,
+				0593FB14192E75010016638A /* EscapedCharacterRemoverTests */,
+				0593FAEF192E75000016638A /* Frameworks */,
+				0593FAEE192E75000016638A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0593FAEE192E75000016638A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0593FAED192E75000016638A /* EscapedCharacterRemover.app */,
+				0593FB0E192E75010016638A /* EscapedCharacterRemoverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0593FAEF192E75000016638A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0593FAF0192E75000016638A /* Cocoa.framework */,
+				0593FB0F192E75010016638A /* XCTest.framework */,
+				0593FAF2192E75000016638A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0593FAF2192E75000016638A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0593FAF3192E75000016638A /* AppKit.framework */,
+				0593FAF4192E75000016638A /* CoreData.framework */,
+				0593FAF5192E75000016638A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0593FAF6192E75000016638A /* EscapedCharacterRemover */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB26192E75580016638A /* Controller */,
+				0593FB25192E75550016638A /* View */,
+				0593FB24192E754F0016638A /* Model */,
+				0593FB02192E75000016638A /* AppDelegate.h */,
+				0593FB03192E75000016638A /* AppDelegate.m */,
+				0593FB05192E75010016638A /* MainMenu.xib */,
+				0593FB08192E75010016638A /* Images.xcassets */,
+				0593FAF7192E75000016638A /* Supporting Files */,
+			);
+			path = EscapedCharacterRemover;
+			sourceTree = "<group>";
+		};
+		0593FAF7192E75000016638A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0593FAF8192E75000016638A /* EscapedCharacterRemover-Info.plist */,
+				0593FAF9192E75000016638A /* InfoPlist.strings */,
+				0593FAFC192E75000016638A /* main.m */,
+				0593FAFE192E75000016638A /* EscapedCharacterRemover-Prefix.pch */,
+				0593FAFF192E75000016638A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0593FB14192E75010016638A /* EscapedCharacterRemoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB1A192E75010016638A /* EscapedCharacterRemoverTests.m */,
+				0593FB15192E75010016638A /* Supporting Files */,
+			);
+			path = EscapedCharacterRemoverTests;
+			sourceTree = "<group>";
+		};
+		0593FB15192E75010016638A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB16192E75010016638A /* EscapedCharacterRemoverTests-Info.plist */,
+				0593FB17192E75010016638A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0593FB24192E754F0016638A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0593FB25192E75550016638A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0593FB26192E75580016638A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB2C192E788A0016638A /* EscapedCharacterRemoverViewController.h */,
+				0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0593FAEC192E75000016638A /* EscapedCharacterRemover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0593FB1E192E75010016638A /* Build configuration list for PBXNativeTarget "EscapedCharacterRemover" */;
+			buildPhases = (
+				0593FAE9192E75000016638A /* Sources */,
+				0593FAEA192E75000016638A /* Frameworks */,
+				0593FAEB192E75000016638A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EscapedCharacterRemover;
+			productName = EscapedCharacterRemover;
+			productReference = 0593FAED192E75000016638A /* EscapedCharacterRemover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0593FB0D192E75010016638A /* EscapedCharacterRemoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0593FB21192E75010016638A /* Build configuration list for PBXNativeTarget "EscapedCharacterRemoverTests" */;
+			buildPhases = (
+				0593FB0A192E75010016638A /* Sources */,
+				0593FB0B192E75010016638A /* Frameworks */,
+				0593FB0C192E75010016638A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0593FB13192E75010016638A /* PBXTargetDependency */,
+			);
+			name = EscapedCharacterRemoverTests;
+			productName = EscapedCharacterRemoverTests;
+			productReference = 0593FB0E192E75010016638A /* EscapedCharacterRemoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0593FAE5192E75000016638A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Troy Chmieleski";
+				TargetAttributes = {
+					0593FB0D192E75010016638A = {
+						TestTargetID = 0593FAEC192E75000016638A;
+					};
+				};
+			};
+			buildConfigurationList = 0593FAE8192E75000016638A /* Build configuration list for PBXProject "EscapedCharacterRemover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0593FAE4192E75000016638A;
+			productRefGroup = 0593FAEE192E75000016638A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0593FAEC192E75000016638A /* EscapedCharacterRemover */,
+				0593FB0D192E75010016638A /* EscapedCharacterRemoverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0593FAEB192E75000016638A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FAFB192E75000016638A /* InfoPlist.strings in Resources */,
+				0593FB09192E75010016638A /* Images.xcassets in Resources */,
+				0593FB01192E75000016638A /* Credits.rtf in Resources */,
+				0593FB07192E75010016638A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0593FB0C192E75010016638A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FB19192E75010016638A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0593FAE9192E75000016638A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FB04192E75000016638A /* AppDelegate.m in Sources */,
+				0593FB2E192E788A0016638A /* EscapedCharacterRemoverViewController.m in Sources */,
+				0593FAFD192E75000016638A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0593FB0A192E75010016638A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593FB1B192E75010016638A /* EscapedCharacterRemoverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0593FB13192E75010016638A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0593FAEC192E75000016638A /* EscapedCharacterRemover */;
+			targetProxy = 0593FB12192E75010016638A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0593FAF9192E75000016638A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0593FAFA192E75000016638A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0593FAFF192E75000016638A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0593FB00192E75000016638A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0593FB05192E75010016638A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0593FB06192E75010016638A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0593FB17192E75010016638A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0593FB18192E75010016638A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0593FB1C192E75010016638A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0593FB1D192E75010016638A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0593FB1F192E75010016638A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				INFOPLIST_FILE = "EscapedCharacterRemover/EscapedCharacterRemover-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0593FB20192E75010016638A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				INFOPLIST_FILE = "EscapedCharacterRemover/EscapedCharacterRemover-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0593FB22192E75010016638A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EscapedCharacterRemover.app/Contents/MacOS/EscapedCharacterRemover";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EscapedCharacterRemoverTests/EscapedCharacterRemoverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0593FB23192E75010016638A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EscapedCharacterRemover.app/Contents/MacOS/EscapedCharacterRemover";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				INFOPLIST_FILE = "EscapedCharacterRemoverTests/EscapedCharacterRemoverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0593FAE8192E75000016638A /* Build configuration list for PBXProject "EscapedCharacterRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0593FB1C192E75010016638A /* Debug */,
+				0593FB1D192E75010016638A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0593FB1E192E75010016638A /* Build configuration list for PBXNativeTarget "EscapedCharacterRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0593FB1F192E75010016638A /* Debug */,
+				0593FB20192E75010016638A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0593FB21192E75010016638A /* Build configuration list for PBXNativeTarget "EscapedCharacterRemoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0593FB22192E75010016638A /* Debug */,
+				0593FB23192E75010016638A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0593FAE5192E75000016638A /* Project object */;
+}

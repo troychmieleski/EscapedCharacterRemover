@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>15F3A9F4-1D54-440A-A333-5DAA69486484</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EscapedCharacterRemover</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B530743E-BEFC-4A65-A0DF-3371D779930F</key>
+		<string>ssh://github.com/chmilsk2/EscapedCharacterRemover.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EscapedCharacterRemover.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B530743E-BEFC-4A65-A0DF-3371D779930F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chmilsk2/EscapedCharacterRemover.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B530743E-BEFC-4A65-A0DF-3371D779930F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B530743E-BEFC-4A65-A0DF-3371D779930F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EscapedCharacterRemover</string>
+		</dict>
+	</array>
+</dict>
+</plist>
