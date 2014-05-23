@@ -23,6 +23,8 @@
 		0593FB39192F0D790016638A /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB36192F0D790016638A /* NoodleLineNumberMarker.m */; };
 		0593FB3A192F0D790016638A /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB38192F0D790016638A /* NoodleLineNumberView.m */; };
 		0593FB3D192F0DA90016638A /* NSTextView+JSDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */; };
+		0593FB41192F7B620016638A /* PrettyPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB40192F7B620016638A /* PrettyPrinter.m */; };
+		0593FB45192F7C160016638A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB44192F7C160016638A /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		0593FB38192F0D790016638A /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
 		0593FB3B192F0DA90016638A /* NSTextView+JSDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+JSDExtensions.h"; sourceTree = "<group>"; };
 		0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+JSDExtensions.m"; sourceTree = "<group>"; };
+		0593FB3F192F7B620016638A /* PrettyPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyPrinter.h; sourceTree = "<group>"; };
+		0593FB40192F7B620016638A /* PrettyPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyPrinter.m; sourceTree = "<group>"; };
+		0593FB43192F7C160016638A /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0593FB44192F7C160016638A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				0593FB24192E754F0016638A /* Model */,
 				0593FB3E192F0DB10016638A /* JDE TextView Extension */,
 				0593FB34192F0D540016638A /* Noodle Line Number Marker */,
+				0593FB42192F7BF70016638A /* GData XML Support */,
 				0593FB02192E75000016638A /* AppDelegate.h */,
 				0593FB03192E75000016638A /* AppDelegate.m */,
 				0593FB05192E75010016638A /* MainMenu.xib */,
@@ -176,6 +183,8 @@
 		0593FB24192E754F0016638A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0593FB3F192F7B620016638A /* PrettyPrinter.h */,
+				0593FB40192F7B620016638A /* PrettyPrinter.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -215,6 +224,15 @@
 				0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */,
 			);
 			name = "JDE TextView Extension";
+			sourceTree = "<group>";
+		};
+		0593FB42192F7BF70016638A /* GData XML Support */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB43192F7C160016638A /* GDataXMLNode.h */,
+				0593FB44192F7C160016638A /* GDataXMLNode.m */,
+			);
+			name = "GData XML Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +335,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0593FB04192E75000016638A /* AppDelegate.m in Sources */,
+				0593FB45192F7C160016638A /* GDataXMLNode.m in Sources */,
 				0593FB32192E85E60016638A /* EscapedCharacterRemoverViewController.m in Sources */,
+				0593FB41192F7B620016638A /* PrettyPrinter.m in Sources */,
 				0593FB3D192F0DA90016638A /* NSTextView+JSDExtensions.m in Sources */,
 				0593FAFD192E75000016638A /* main.m in Sources */,
 				0593FB3A192F0D790016638A /* NoodleLineNumberView.m in Sources */,
@@ -456,7 +476,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "EscapedCharacterRemover/EscapedCharacterRemover-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,7 +495,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EscapedCharacterRemover/EscapedCharacterRemover-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "EscapedCharacterRemover/EscapedCharacterRemover-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

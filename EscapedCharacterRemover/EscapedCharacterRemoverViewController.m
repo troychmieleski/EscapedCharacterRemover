@@ -8,6 +8,7 @@
 
 #import "EscapedCharacterRemoverViewController.h"
 #import "NSTextView+JSDExtensions.h"
+#import "PrettyPrinter.h"
 
 @interface EscapedCharacterRemoverViewController () <NSTextViewDelegate>
 
@@ -55,9 +56,13 @@
 }
 
 - (void)removeEscapedCharacterButtonClicked:(id)sender {
-	NSString *inputText = _inputTextView.textStorage.string;
+	NSString *inputText = _inputTextView.string;
+	
+	// remove \ character which indicates an escaped character
 	NSString *outputText = [inputText stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-	[_outputTextView setString:outputText];	
+	outputText = [PrettyPrinter prettyPrintXML:outputText];
+	
+	[_outputTextView setString:outputText];
 }
 
 
