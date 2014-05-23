@@ -8,4 +8,4 @@ Note that this naive approach removes all instances of the `\` character.
 
 If after removing the escaped characters, the content is valid XML, the XML will be pretty formatted before being displayed as output.
 
-
+![Escaped Character Remover XML Examle Screenshot](https://raw.githubusercontent.com/chmilsk2/EscapedCharacterRemover/master/Screenshots/RemoveEscaped%20CharactersXML%20Example.png)
