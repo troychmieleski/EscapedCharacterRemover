@@ -11,7 +11,11 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	self.escapedCharacterRemoverViewController = [[EscapedCharacterRemoverViewController alloc] initWithNibName:@"EscapedCharacterRemoverViewController" bundle:nil];
 	
+	[self.window setBackgroundColor:[NSColor blackColor]];
+	[self.window.contentView addSubview:self.escapedCharacterRemoverViewController.view];
+	self.escapedCharacterRemoverViewController.view.frame = ((NSView *)self.window.contentView).bounds;
 }
 
 @end

@@ -18,7 +18,11 @@
 		0593FB11192E75010016638A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0593FAF0192E75000016638A /* Cocoa.framework */; };
 		0593FB19192E75010016638A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0593FB17192E75010016638A /* InfoPlist.strings */; };
 		0593FB1B192E75010016638A /* EscapedCharacterRemoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB1A192E75010016638A /* EscapedCharacterRemoverTests.m */; };
-		0593FB2E192E788A0016638A /* EscapedCharacterRemoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */; };
+		0593FB32192E85E60016638A /* EscapedCharacterRemoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB30192E85E60016638A /* EscapedCharacterRemoverViewController.m */; };
+		0593FB33192E85E60016638A /* EscapedCharacterRemoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0593FB31192E85E60016638A /* EscapedCharacterRemoverViewController.xib */; };
+		0593FB39192F0D790016638A /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB36192F0D790016638A /* NoodleLineNumberMarker.m */; };
+		0593FB3A192F0D790016638A /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB38192F0D790016638A /* NoodleLineNumberView.m */; };
+		0593FB3D192F0DA90016638A /* NSTextView+JSDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,15 @@
 		0593FB16192E75010016638A /* EscapedCharacterRemoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EscapedCharacterRemoverTests-Info.plist"; sourceTree = "<group>"; };
 		0593FB18192E75010016638A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0593FB1A192E75010016638A /* EscapedCharacterRemoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EscapedCharacterRemoverTests.m; sourceTree = "<group>"; };
-		0593FB2C192E788A0016638A /* EscapedCharacterRemoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EscapedCharacterRemoverViewController.h; sourceTree = "<group>"; };
-		0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EscapedCharacterRemoverViewController.m; sourceTree = "<group>"; };
+		0593FB2F192E85E60016638A /* EscapedCharacterRemoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EscapedCharacterRemoverViewController.h; sourceTree = "<group>"; };
+		0593FB30192E85E60016638A /* EscapedCharacterRemoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EscapedCharacterRemoverViewController.m; sourceTree = "<group>"; };
+		0593FB31192E85E60016638A /* EscapedCharacterRemoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EscapedCharacterRemoverViewController.xib; sourceTree = "<group>"; };
+		0593FB35192F0D790016638A /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		0593FB36192F0D790016638A /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		0593FB37192F0D790016638A /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		0593FB38192F0D790016638A /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		0593FB3B192F0DA90016638A /* NSTextView+JSDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+JSDExtensions.h"; sourceTree = "<group>"; };
+		0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+JSDExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +132,8 @@
 				0593FB26192E75580016638A /* Controller */,
 				0593FB25192E75550016638A /* View */,
 				0593FB24192E754F0016638A /* Model */,
+				0593FB3E192F0DB10016638A /* JDE TextView Extension */,
+				0593FB34192F0D540016638A /* Noodle Line Number Marker */,
 				0593FB02192E75000016638A /* AppDelegate.h */,
 				0593FB03192E75000016638A /* AppDelegate.m */,
 				0593FB05192E75010016638A /* MainMenu.xib */,
@@ -177,10 +190,31 @@
 		0593FB26192E75580016638A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0593FB2C192E788A0016638A /* EscapedCharacterRemoverViewController.h */,
-				0593FB2D192E788A0016638A /* EscapedCharacterRemoverViewController.m */,
+				0593FB2F192E85E60016638A /* EscapedCharacterRemoverViewController.h */,
+				0593FB30192E85E60016638A /* EscapedCharacterRemoverViewController.m */,
+				0593FB31192E85E60016638A /* EscapedCharacterRemoverViewController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0593FB34192F0D540016638A /* Noodle Line Number Marker */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB35192F0D790016638A /* NoodleLineNumberMarker.h */,
+				0593FB36192F0D790016638A /* NoodleLineNumberMarker.m */,
+				0593FB37192F0D790016638A /* NoodleLineNumberView.h */,
+				0593FB38192F0D790016638A /* NoodleLineNumberView.m */,
+			);
+			name = "Noodle Line Number Marker";
+			sourceTree = "<group>";
+		};
+		0593FB3E192F0DB10016638A /* JDE TextView Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0593FB3B192F0DA90016638A /* NSTextView+JSDExtensions.h */,
+				0593FB3C192F0DA90016638A /* NSTextView+JSDExtensions.m */,
+			);
+			name = "JDE TextView Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0593FB33192E85E60016638A /* EscapedCharacterRemoverViewController.xib in Resources */,
 				0593FAFB192E75000016638A /* InfoPlist.strings in Resources */,
 				0593FB09192E75010016638A /* Images.xcassets in Resources */,
 				0593FB01192E75000016638A /* Credits.rtf in Resources */,
@@ -282,8 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0593FB04192E75000016638A /* AppDelegate.m in Sources */,
-				0593FB2E192E788A0016638A /* EscapedCharacterRemoverViewController.m in Sources */,
+				0593FB32192E85E60016638A /* EscapedCharacterRemoverViewController.m in Sources */,
+				0593FB3D192F0DA90016638A /* NSTextView+JSDExtensions.m in Sources */,
 				0593FAFD192E75000016638A /* main.m in Sources */,
+				0593FB3A192F0D790016638A /* NoodleLineNumberView.m in Sources */,
+				0593FB39192F0D790016638A /* NoodleLineNumberMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +534,7 @@
 				0593FB20192E75010016638A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0593FB21192E75010016638A /* Build configuration list for PBXNativeTarget "EscapedCharacterRemoverTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +543,7 @@
 				0593FB23192E75010016638A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
